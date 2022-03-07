@@ -1,7 +1,7 @@
 # xlsx-auto-fill
 
--reads excel files and make database(dictionary of dictionary) then fills the required fields of destination excel file with help of database
--reads unorganized data and writes in order
+Reads excel files and make database(dictionary of dictionary) then fills the required fields of destination excel file with help of database.
+Reads unorganized data and writes in order.
 ...and more; it is just a tool and i am sure you can find other uses if you understand how it works
 
 ### back story in short

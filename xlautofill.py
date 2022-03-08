@@ -40,7 +40,7 @@ def dmp_data():
             for cell in cells:
                 if dhrow[cell.column].value in data[i.value]:
                     cell.value=data[i.value][dhrow[cell.column].value]
-    wbd.save(filename="C:\\Users\\manis\\Downloads\\Madurai CFA Daily Report - Dump file.xlsx")
+    wbd.save(filename= locd )
 
 sg.theme('Material1')
 

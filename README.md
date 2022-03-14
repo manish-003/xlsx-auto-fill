@@ -13,7 +13,7 @@ I originally started this project to automate a part of my dad's work
  i am planning to include the following features and updates in future:
  - option to read from multiple source files at once
  - redesign UI with tkinter or kivy
- - ~add option to select destination folder~
+ - ~add option to select destination folder~ ✅
  - i know you can understand how this program works by yourself but i am planning to include a documentatiom explaining this (until then refer 'how to use' section below)
  
  ..well that's all i have i mind now if you have any ideas, do let me know (use a pull request to update this section in read me file)

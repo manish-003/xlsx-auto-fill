@@ -40,7 +40,7 @@ def dmp_data():
             for cell in cells:
                 if dhrow[cell.column].value in data[i.value]:
                     cell.value=data[i.value][dhrow[cell.column].value]
-    wbd.save(filename= locd )
+    wbd.save(filename= locr + nmrf + ".xlsx" )
 
 sg.theme('Material1')
 
@@ -55,6 +55,8 @@ layout = [[sg.Text('select source:'), sg.Input(key="sloc") ,sg.FileBrowse(), sg.
 [sg.Text('heading column in dump:'), sg.Input(key='hcd'), sg.Text('heading row in dump:'), sg.Input(key='hrd')],
 [sg.Text('start row of dump aera:'), sg.Input(key='srdwa'), sg.Text('max row to read:'),sg.Input(key='mxrwd')],
 [sg.Text('start col of dump aera:'),sg.Input(key='scdwa'), sg.Text('max col to dump:'),sg.Input(key="mxcld")], 
+[sg.Text('enter result folder location:'),sg.Input(key = "rfdr"), sg.FolderBrowse()],
+[sg.Text('enter result file name:'), sg.Input(default_text='product_file',key= "rfnm")],
 [sg.Text(' ')],
 [sg.Ok(), sg.Exit(), sg.Text('                                              made by Manish')]]
 
@@ -68,6 +70,8 @@ while True:
         #sg.popup(value['sloc']+' '+value['dloc']+' '+ value['mxrw'] )
         locs = value['sloc']
         locd = value['dloc']
+        locr = value['rfdr']
+        nmrf = value['rfnm']
         
         try:
             #source:
